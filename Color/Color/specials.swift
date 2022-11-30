@@ -6,6 +6,11 @@
 //
 
 import UIKit
+
+
+
+
+
 func setSlider(opacityslider: UISlider) {
     let tgl = CAGradientLayer()
     let frame = CGRect(x: 0.0, y: 0.0, width: opacityslider.bounds.width, height: 15.0)
