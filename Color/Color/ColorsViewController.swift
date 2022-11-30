@@ -11,24 +11,61 @@ class ColorsViewController: UIViewController {
     @IBOutlet var redColorTF: UITextField!
     @IBOutlet var greenColorTF: UITextField!
     @IBOutlet var blueColorTF: UITextField!
-    @IBOutlet var opacityslider: UISlider!
+
+    @IBOutlet weak var opacitySlider: UISlider!
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     @IBOutlet var viewColor: UIView!
     @IBOutlet var opacityTF: UITextField!
    
+//    var updatingViewColor: UIColor = .red
+//   
+//    override func viewWillAppear(_ animated: Bool) { super.viewWillAppear(animated); updateColor(withText: updatingViewColor)
+//    }
+//    // обновляем данные в текстовом поле
+//    private func updateColor(withText text: UIColor) {
+//        updatingViewColor.backgroundColor = viewColor }
+//    
+//    
+//    
+    
+    
+    
+    
     override func viewDidLoad() {
-        setSlider(opacityslider: opacityslider)
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func blueSlider(_ sender: UISlider) {}
-    @IBAction func greenSlider(_ sender: UISlider) {}
-    @IBAction func redSlider(_ sender: UISlider) {}
-    @IBAction func OpacitySlider(_ sender: UISlider) {}
+    @IBAction func blueSlider(_ sender: UISlider) {
+        let blue = Int(round(blueSlider.value))
+        
+        blueColorTF.text = "\(blue)"
+        
+        
+        
+    }
+    @IBAction func greenSlider(_ sender: UISlider) {
+        let green = Int(round(greenSlider.value))
+        
+        greenColorTF.text = "\(green)"
+    }
+    @IBAction func redSlider(_ sender: UISlider) {
+        
+        let red = Int(round(redSlider.value))
+        
+      redColorTF.text = "\(red)"
+    }
+    @IBAction func OpacitySlider(_ sender: UISlider) {
+        
+        let opacity = Int(round(opacitySlider.value))
+        
+      opacityTF.text = "\(opacity)"
+        
+        
+    }
 }
 
 /*
