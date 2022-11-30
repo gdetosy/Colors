@@ -14,6 +14,7 @@
 		9684B8792937B56C00EB9F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9684B8782937B56C00EB9F94 /* Assets.xcassets */; };
 		9684B87C2937B56C00EB9F94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9684B87A2937B56C00EB9F94 /* LaunchScreen.storyboard */; };
 		9684B8842937B73100EB9F94 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684B8832937B73100EB9F94 /* ColorsViewController.swift */; };
+		9684B8862937C67C00EB9F94 /* specials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684B8852937C67C00EB9F94 /* specials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9684B87B2937B56C00EB9F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9684B87D2937B56C00EB9F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9684B8832937B73100EB9F94 /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
+		9684B8852937C67C00EB9F94 /* specials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = specials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				9684B8712937B56900EB9F94 /* SceneDelegate.swift */,
 				9684B8732937B56900EB9F94 /* ViewController.swift */,
 				9684B8832937B73100EB9F94 /* ColorsViewController.swift */,
+				9684B8852937C67C00EB9F94 /* specials.swift */,
 				9684B8752937B56A00EB9F94 /* Main.storyboard */,
 				9684B8782937B56C00EB9F94 /* Assets.xcassets */,
 				9684B87A2937B56C00EB9F94 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9684B8862937C67C00EB9F94 /* specials.swift in Sources */,
 				9684B8742937B56900EB9F94 /* ViewController.swift in Sources */,
 				9684B8702937B56900EB9F94 /* AppDelegate.swift in Sources */,
 				9684B8842937B73100EB9F94 /* ColorsViewController.swift in Sources */,
