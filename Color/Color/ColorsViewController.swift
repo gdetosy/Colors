@@ -31,7 +31,7 @@ class ColorsViewController: UIViewController {
     //
     
     override func viewDidLoad() {
-        
+     
 
         super.viewDidLoad()
         
@@ -76,7 +76,7 @@ class ColorsViewController: UIViewController {
    
     
     func updateColor() {
-        viewColor.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(opacitySlider.value))
+        viewColor.backgroundColor = UIColor(red: CGFloat(redSlider.value / 255), green: CGFloat(greenSlider.value / 255), blue: CGFloat(blueSlider.value / 255), alpha: CGFloat(opacitySlider.value / 100))
 //        var red : CGFloat = 0
 //        var green : CGFloat = 0
 //        var blue : CGFloat = 0

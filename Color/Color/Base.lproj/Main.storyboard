@@ -99,55 +99,62 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="11u-rO-Kgc">
-                                        <rect key="frame" x="55" y="473" width="240" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11u-rO-Kgc">
+                                        <rect key="frame" x="55" y="417" width="240" height="102"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NQd-Cy-MGv" userLabel="OpacitySlider">
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="NQd-Cy-MGv" userLabel="OpacitySlider">
                                         <rect key="frame" x="13" y="351" width="168" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="OpacitySlider:" destination="u16-q6-8DK" eventType="valueChanged" id="hop-KQ-qNN"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LP3-0Y-gCb">
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="LP3-0Y-gCb">
                                         <rect key="frame" x="13" y="83" width="168" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="minimumTrackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="redSlider:" destination="u16-q6-8DK" eventType="valueChanged" id="aVY-q0-xd3"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ldf-M7-JAL">
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Ldf-M7-JAL">
                                         <rect key="frame" x="13" y="174" width="168" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="minimumTrackTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="greenSlider:" destination="u16-q6-8DK" eventType="valueChanged" id="NN6-E5-SH9"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-Dj-aZc">
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-Dj-aZc">
                                         <rect key="frame" x="13" y="258" width="168" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="minimumTrackTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="blueSlider:" destination="u16-q6-8DK" eventType="valueChanged" id="uW0-O7-Nha"/>
                                         </connections>
                                     </slider>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sf-LZ-XJg">
-                                        <rect key="frame" x="229" y="348" width="97" height="34"/>
+                                        <rect key="frame" x="229" y="346" width="97" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="11u-rO-Kgc" firstAttribute="leading" secondItem="DNu-P4-wXP" secondAttribute="leading" constant="55" id="5YC-Xg-KTI"/>
+                                    <constraint firstAttribute="bottom" secondItem="11u-rO-Kgc" secondAttribute="bottom" constant="26" id="Vka-Ct-el0"/>
+                                    <constraint firstItem="11u-rO-Kgc" firstAttribute="top" secondItem="DNu-P4-wXP" secondAttribute="top" constant="417" id="pIX-oI-EcV"/>
+                                    <constraint firstAttribute="trailing" secondItem="11u-rO-Kgc" secondAttribute="trailing" constant="55" id="rM6-TX-sP1"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTs-Su-OHa">
-                                <rect key="frame" x="133" y="709" width="126" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTs-Su-OHa">
+                                <rect key="frame" x="125" y="709" width="140" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Change color"/>
                             </button>
@@ -156,9 +163,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rTf-xf-ONI" firstAttribute="bottom" secondItem="DNu-P4-wXP" secondAttribute="bottom" constant="124" id="3K1-kT-fcl"/>
+                            <constraint firstItem="rTf-xf-ONI" firstAttribute="bottom" secondItem="nTs-Su-OHa" secondAttribute="bottom" constant="66" id="9dB-fa-TFU"/>
                             <constraint firstItem="rTf-xf-ONI" firstAttribute="trailing" secondItem="DNu-P4-wXP" secondAttribute="trailing" constant="20" id="Ijm-TJ-ZAd"/>
                             <constraint firstItem="DNu-P4-wXP" firstAttribute="leading" secondItem="rTf-xf-ONI" secondAttribute="leading" constant="20" id="PbB-1I-XrK"/>
                             <constraint firstItem="DNu-P4-wXP" firstAttribute="top" secondItem="rTf-xf-ONI" secondAttribute="top" constant="50" id="Sjo-oD-NEn"/>
+                            <constraint firstItem="nTs-Su-OHa" firstAttribute="leading" secondItem="rTf-xf-ONI" secondAttribute="leading" constant="125" id="c9e-GN-uVS"/>
+                            <constraint firstItem="rTf-xf-ONI" firstAttribute="trailing" secondItem="nTs-Su-OHa" secondAttribute="trailing" constant="125" id="nkP-4L-Zne"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GQa-Cj-bCh"/>
@@ -200,9 +210,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
