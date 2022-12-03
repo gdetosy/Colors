@@ -157,7 +157,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTs-Su-OHa">
                                 <rect key="frame" x="125" y="709" width="140" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Change color"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Done"/>
                                 <connections>
                                     <action selector="changeColorBtn:" destination="u16-q6-8DK" eventType="touchUpInside" id="gZ9-Rx-aFu"/>
                                 </connections>
