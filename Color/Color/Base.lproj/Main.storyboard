@@ -24,18 +24,28 @@
                                     <action selector="changeBgColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBa-Hb-hSg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuV-LE-vdb">
+                                <rect key="frame" x="174" y="331" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c9d-Zx-gJH" secondAttribute="trailing" constant="20" id="20t-Zk-mX1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xuV-LE-vdb" secondAttribute="trailing" constant="174" id="7nJ-Ei-BG3"/>
+                            <constraint firstItem="xuV-LE-vdb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="F9l-bY-8RA"/>
                             <constraint firstItem="c9d-Zx-gJH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IVM-cs-VLW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IJI-uS-WYv"/>
                     <connections>
                         <outlet property="ChangeBGColorButton" destination="c9d-Zx-gJH" id="KA8-Fj-ke2"/>
-                        <segue destination="u16-q6-8DK" kind="show" identifier="colorsViewController" id="yTm-4i-t43"/>
+                        <outlet property="label" destination="xuV-LE-vdb" id="Wey-xe-wAg"/>
+                        <outlet property="views" destination="8bC-Xf-vdC" id="zRx-b2-pGe"/>
+                        <segue destination="u16-q6-8DK" kind="show" identifier="goToColorsVC" id="yTm-4i-t43"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -157,6 +167,9 @@
                                 <rect key="frame" x="125" y="709" width="140" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Change color"/>
+                                <connections>
+                                    <action selector="changeColorBtn:" destination="u16-q6-8DK" eventType="touchUpInside" id="gZ9-Rx-aFu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rTf-xf-ONI"/>

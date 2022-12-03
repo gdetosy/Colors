@@ -6,37 +6,50 @@
 //
 
 import UIKit
-
+protocol ProtocolChangeColor {
+    func updColor(color: UIColor?)
+    func lblText(text: String?)
+}
 class ViewController: UIViewController {
     @IBOutlet weak var changeBGColorButton: UIButton!
     
-  
+    @IBOutlet var views: UIView!
     
-    
+    @IBOutlet weak var label: UILabel!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let settingVC = segue.destination as? ColorsViewController,
+           segue.identifier == "goToColorsVC"
+        {
+            if let backColor = views.backgroundColor
+            {
+                
+                
+                settingVC.delegate = self
+            }
+        }
+    }
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func changeBgColorButton(_ sender: UIButton) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let editScreen = storyboard.instantiateViewController(withIdentifier:
-//                "colorsViewController") as! ColorsViewController
-//        editScreen.updatingViewColor = view.backgroundColor ?? .white
-//        
-        performSegue(withIdentifier: "colorsViewController", sender: nil)
-//
-//        @IBAction func editDataWithProperty(_ sender: UIButton) {
-//        // получаем вью контроллер, в который происходит переход
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let editScreen = storyboard.instantiateViewController(withIdentifier:
-//        "SecondViewController") as! SecondViewController
-//        // передаем данные
-//        editScreen.updatingData = dataLabel.text ?? ""
-//        // переходим к следующему экрану
-//        self.navigationController?.pushViewController(editScreen, animated: true)
-//        }
-    }
+                super.viewDidLoad()
+                // Do any additional setup after loading the view.
+            }
+            @IBAction func changeBgColorButton(_ sender: UIButton) {
+                
+                performSegue(withIdentifier: "goToColorsVC", sender: nil)
+                
+            }
+            
+            
+        
     
-
 }
+extension ViewController: ProtocolChangeColor {
+  
+    func updColor(color: UIColor?) {
+        views.backgroundColor = color
+    }
+    func lblText(text: String?) {
+            label.text = text
+            
+        }
+    }
 
