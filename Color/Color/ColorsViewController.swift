@@ -12,7 +12,6 @@ class ColorsViewController: UIViewController {
     @IBOutlet var redColorTF: UITextField!
     @IBOutlet var greenColorTF: UITextField!
     @IBOutlet var blueColorTF: UITextField!
-    
     @IBOutlet var opacitySlider: UISlider!
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
@@ -21,6 +20,7 @@ class ColorsViewController: UIViewController {
     @IBOutlet var opacityTF: UITextField!
  
     override func viewDidLoad() {
+     updateColor()
         super.viewDidLoad()
     }
 
@@ -48,12 +48,10 @@ class ColorsViewController: UIViewController {
     @IBAction func OpacitySlider(_ sender: UISlider) {
         updateColor()
         let opacity = Int(round(opacitySlider.value))
-        
         opacityTF.text = "\(opacity)"
     }
    
     @IBAction func changeColorBtn(_ sender: UIButton) {
-        delegate?.lblText(text: redColorTF.text)
         delegate?.updColor(color: viewColor.backgroundColor)
         self.navigationController?.popToRootViewController(animated: true)
     }
